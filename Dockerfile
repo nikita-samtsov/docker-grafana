@@ -3,7 +3,7 @@ MAINTAINER Stefan Walther <swrnixda@gmail.com>
 
 RUN apt-get update && \
     apt-get install -y curl gettext-base && \
-    rm -rf /var/lib/apt/lists/*
+#    rm -rf /var/lib/apt/lists/*
 
 COPY entrypoint.sh .
 RUN chmod +x entrypoint.sh
