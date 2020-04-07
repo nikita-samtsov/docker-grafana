@@ -3,7 +3,7 @@ MAINTAINER support@samtsov.com
 
 
 COPY entrypoint.sh .
-RUN sudo chmod +x entrypoint.sh
+
 
 # Todo: Just for debugging purposes, can be removed
 # Make sure that the init flag is not there
