@@ -1,9 +1,9 @@
-FROM grafana/grafana:6.5.0-ubuntu
+FROM grafana/grafana:4.6.4
 MAINTAINER Stefan Walther <swrnixda@gmail.com>
 
 RUN apt-get update && \
-    apt-get install -y curl gettext-base
-
+    apt-get install -y curl gettext-base && \
+    rm -rf /var/lib/apt/lists/*
 
 COPY entrypoint.sh .
 RUN chmod +x entrypoint.sh
