@@ -20,7 +20,6 @@ services:
     ports:
       - 3000:3000
     volumes:
-      - ./entrypoint.sh:/app/entrypoint.sh
       - ./config/grafana.ini:/etc/grafana/grafana.ini
       - ./config/dashboards:/var/lib/grafana/dashboards
       - ./config/datasources:/etc/grafana/datasources
